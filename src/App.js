@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Swiper, SwiperSlide } from 'swiper/react'; // 필수! 'npm i swiper' install 후 swiper 불러오기, swiper package에서 Swiper, SwiperSlide 컴포넌트를 불로온다.
-import SwiperCore, { Navigation, Pagination, Thumbs, Controller, Autoplay} from 'swiper'; // swiper에 있는 기능들 불러오기 = additional modules imports
+import { Swiper, SwiperSlide } from 'swiper/react'; // 필수! 'npm i swiper' install 후 swiper 불러오기, swiper package에서 Swiper, SwiperSlide 컴포넌트를 불로온다. [필수]
+import SwiperCore, { Navigation, Pagination, Thumbs, Controller, Autoplay} from 'swiper'; // swiper에 있는 기능들 불러오기 = additional modules imports [필수]
  // swiper package에 다른 종류의 css가 있다. (import 'swiper/components/navigation/navigation.scss'; import 'swiper/components/pagination/pagination.scss';import 'swiper/components/scrollbar/scrollbar.scss';)
-import 'swiper/swiper-bundle.css'; // swiper pacakge의 css 묶음.
+import 'swiper/swiper-bundle.css'; // swiper pacakge의 css 묶음. [필수]
 
 SwiperCore.use([Navigation, Pagination, Thumbs, Controller, Autoplay]); // 사용하고자 하는 기능만 import하고, 왼쪽과 같이 선언한다. 그리고 아래 <Swiper></Swiper> 안에 속석값으로 넣어준다.
 
